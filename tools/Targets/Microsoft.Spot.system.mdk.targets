@@ -64,6 +64,14 @@
      <FROMELF Condition="'$(COMPILER_TOOL_VERSION)'=='MDK5.05'">"$(MDK_TOOL_PATH)\ARMCC\bin\fromelf.exe"</FROMELF>
      <MdkCrtLibLinkSwitch Condition="'$(COMPILER_TOOL_VERSION)'=='MDK5.05'">$(MdkCrtLibLinkSwitch) $(SWTC)libpath $(MDK_TOOL_PATH)\ARMCC\LIB</MdkCrtLibLinkSwitch>
 
+     <CC      Condition="'$(COMPILER_TOOL_VERSION)'=='MDK5.17'">"$(MDK_TOOL_PATH)\ARMCC\bin\armcc.exe"</CC>
+     <CPP     Condition="'$(COMPILER_TOOL_VERSION)'=='MDK5.17'">"$(MDK_TOOL_PATH)\ARMCC\bin\armcc.exe"</CPP>
+     <AS      Condition="'$(COMPILER_TOOL_VERSION)'=='MDK5.17'">"$(MDK_TOOL_PATH)\ARMCC\bin\armasm.exe"</AS>
+     <LINK    Condition="'$(COMPILER_TOOL_VERSION)'=='MDK5.17'">"$(MDK_TOOL_PATH)\ARMCC\bin\armlink.exe"</LINK>
+     <AR      Condition="'$(COMPILER_TOOL_VERSION)'=='MDK5.17'">"$(MDK_TOOL_PATH)\ARMCC\bin\armar.exe"</AR>
+     <FROMELF Condition="'$(COMPILER_TOOL_VERSION)'=='MDK5.17'">"$(MDK_TOOL_PATH)\ARMCC\bin\fromelf.exe"</FROMELF>
+     <MdkCrtLibLinkSwitch Condition="'$(COMPILER_TOOL_VERSION)'=='MDK5.17'">$(MdkCrtLibLinkSwitch) $(SWTC)libpath $(MDK_TOOL_PATH)\ARMCC\LIB</MdkCrtLibLinkSwitch>
+
  </PropertyGroup>
 
   <PropertyGroup>
